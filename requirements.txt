@@ -2,6 +2,7 @@ django
 django-rest-framework
 psycopg2
 gunicorn
+uvicorn
 dj-database-url
 django-cors-headers
 openai
@@ -13,3 +14,4 @@ python-dotenv
 pandas
 scikit-learn
 treelib
+whitenoise[brotli]
