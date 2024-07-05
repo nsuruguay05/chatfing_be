@@ -1,5 +1,6 @@
 import pandas as pd
 from treelib import Tree
+from django.contrib.staticfiles import finders
 
 from documents.models import Chunk
 from documents.retrieval_methods.knn_retrieval import retrieve
@@ -43,7 +44,7 @@ def create_answer(message, model, temperature=0):
 
 def derivation_prompt(message):
     # Load Few-Shot examples
-    df = pd.read_csv("qa\static\ejemplosv2.csv")
+    df = pd.read_csv(finders.find("ejemplosv2.csv"))
 
     examples = []
 
