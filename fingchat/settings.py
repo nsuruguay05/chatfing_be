@@ -31,7 +31,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-^(my%x-+acz)c8ca@_e_v5x@u1
 DEBUG = os.getenv('DEBUG') == 'True'
 
 ALLOWED_HOSTS = [
-    'https://fingchat.onrender.com/',
+    'fingchat.onrender.com',
     'localhost',
 ]
 
