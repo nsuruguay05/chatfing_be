@@ -152,4 +152,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "https://fingchat.vercel.app",
+    "https://fingchat.onrender.com",
 ]
