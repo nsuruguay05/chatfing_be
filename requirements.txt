@@ -1,0 +1,15 @@
+django
+django-rest-framework
+psycopg2
+gunicorn
+dj-database-url
+django-cors-headers
+openai
+anthropic
+google-generativeai
+django-storages
+boto3
+python-dotenv
+pandas
+scikit-learn
+treelib

@@ -1,0 +1,98 @@
+id,extractos,pregunta,respuesta_modelo,justificación_modelo,derivación,respuesta
+1,12 25 86,¿Cuál es el significado de un crédito y cuántas horas de estudio semanal se debe dedicar a una asignatura con 13 créditos?,"Un crédito es una medida de la dedicación de una asignatura, y se supone que si una asignatura tiene más créditos, es necesario dedicarle más horas. Un crédito equivale aproximadamente a una hora de estudio semanal, durante todo un semestre. Por lo tanto, una asignatura con 13 créditos implica una dedicación aproximada de 13 horas semanales.","Extracto utilizado para responder:
+- Extracto de página web de título: Futuros estudiantes | Facultad de Ingeniería
+¿Qué es un crédito y por qué las carreras se miden así?","Extract | 2 | Un crédito es una medida de la dedicación de una asignatura. Se supone que si una asignatura tiene más créditos, es necesario dedicarle más horas. | No es respuesta final
+
+Nueva hipótesis:
+a. Un crédito es una medida de la dedicación de una asignatura. Se supone que si una asignatura tiene más créditos, es necesario dedicarle más horas.
+
+Extract | 2 | Un crédito equivale aproximadamente a una hora de estudio semanal, durante todo un semestre. | No es respuesta final
+
+Nueva hipótesis:
+b. Un crédito equivale aproximadamente a una hora de estudio semanal, durante todo un semestre.
+
+Instantiate | b | Un crédito equivale aproximadamente a una hora de estudio semanal, durante todo un semestre. Por lo tanto, una asignatura con 13 créditos implica una dedicación aproximada de 13 horas semanales. | No es respuesta final
+
+Nueva hipótesis:
+c. Un crédito equivale aproximadamente a una hora de estudio semanal, durante todo un semestre. Por lo tanto, una asignatura con 13 créditos implica una dedicación aproximada de 13 horas semanales.
+
+Concat | a,c | Un crédito es una medida de la dedicación de una asignatura. Se supone que si una asignatura tiene más créditos, es necesario dedicarle más horas. Un crédito equivale aproximadamente a una hora de estudio semanal, durante todo un semestre. Por lo tanto, una asignatura con 13 créditos implica una dedicación aproximada de 13 horas semanales. | Es respuesta final
+","Un crédito es una medida de la dedicación de una asignatura, y se supone que si una asignatura tiene más créditos, es necesario dedicarle más horas. Un crédito equivale aproximadamente a una hora de estudio semanal, durante todo un semestre. Por lo tanto, una asignatura con 13 créditos implica una dedicación aproximada de 13 horas semanales."
+2,3 9 1,¿Cuántos créditos mínimos se requieren para obtener un Diploma de Especialización?,-,"Para responder a esta pregunta, se puede referirse al Extracto 2, que enumera las distintas carreras de Diploma de Especialización y menciona las exigencias curriculares mínimas. En el caso del Diploma de Especialización, se especifica que las exigencias curriculares mínimas son 60 créditos.",Extract | 3 | Las exigencias curriculares mínimas son 60 créditos. | Es respuesta final,Las exigencias curriculares mínimas son 60 créditos.
+3,31 67 12,¿Cuáles son los horarios de atención presencial para consultas relacionadas con revalidación?,"Los horarios de atención presencial para consultas relacionadas con revalidación, ingreso, cursado excepcional de unidades curriculares avanzadas y básicas, dificultades en el avance y planificación del semestre, y cambio de carrera en la Facultad de Ingeniería son de Jueves de 13:30 a 15:30hs, primer piso, puerta 104.",Extracto utilizado: EXTRACTO 3 (Consultas y Orientación),"Extract | 3 | Jueves de 13:30 a 15:30hs, primer piso, puerta 104. En caso de requerir una consulta presencial (o por zoom) fuera del horario establecido, se puede coordinar escribiendo al correo de orientación. | No es respuesta final
+
+Nueva hipótesis:
+a. Jueves de 13:30 a 15:30hs, primer piso, puerta 104. En caso de requerir una consulta presencial (o por zoom) fuera del horario establecido, se puede coordinar escribiendo al correo de orientación.
+
+Extract | 3 | Consultas por correo: Enviar a la dirección orientacion@fing.edu.uy. | No es respuesta final
+
+Nueva hipótesis:
+b. Consultas por correo: Enviar a la dirección orientacion@fing.edu.uy.
+
+Compose | a,b | Jueves de 13:30 a 15:30hs, primer piso, puerta 104. En caso de requerir una consulta presencial (o por zoom) fuera del horario establecido, se puede coordinar escribiendo al correo de orientación (orientacion@fing.edu.uy). | No es respuesta final
+
+Nueva hipótesis:
+c. Jueves de 13:30 a 15:30hs, primer piso, puerta 104. En caso de requerir una consulta presencial (o por zoom) fuera del horario establecido, se puede coordinar escribiendo al correo de orientación (orientacion@fing.edu.uy).
+
+Refine | c |  El horario de atención para ese tipo de consultas es jueves de 13:30 a 15:30hs, primer piso, puerta 104. En caso de requerir una consulta presencial (o por zoom) fuera del horario establecido, se puede coordinar escribiendo al correo de orientación  (orientacion@fing.edu.uy). | Es respuesta final","El horario de atención para ese tipo de consultas es jueves de 13:30 a 15:30hs, primer piso, puerta 104. En caso de requerir una consulta presencial (o por zoom) fuera del horario establecido, se puede coordinar escribiendo al correo de orientación  (orientacion@fing.edu.uy)."
+4,54 55 10,No estoy seguro si debo cursar Matemática Inicial o Cálculo Diferencial e Integral en una Variable (CDIV).,"La respuesta a la pregunta es que la Facultad de Ingeniería recomienda a los estudiantes que no estén seguros de si deben cursar Matemática Inicial o CDIV en su primer semestre, analicen el nivel de exigencia de los cursos en las primeras semanas y su desempeño, y en caso de no poder manejar el CDIV, podrían optar por Matemática Inicial en vez de CDIV.","Para responder a esta pregunta, se puede utilizar información de los extractos 1 y 2. En el extracto 1, se menciona que Matemática Inicial es un curso opcional que se recomienda para aquellos estudiantes que no acrediten en el resultado de su prueba diagnóstica de matemática. En el extracto 2, se sugiere que los estudiantes analicen el nivel de exigencia de los cursos en las primeras semanas y su desempeño, y en caso de no poder manejar el CDIV, podrían optar por Matemática Inicial en vez de CDIV.","Extract | 1 | La Facultad te sugiere que en caso de no acreditar en el resultado de tu prueba diagnóstica de matemática, elijas cursar Matemática Inicial en vez de CDIV. | No es respuesta final
+
+Nueva hipótesis:
+a. La Facultad te sugiere que en caso de no acreditar en el resultado de tu prueba diagnóstica de matemática, elijas cursar Matemática Inicial en vez de CDIV.
+
+Extract | 2 | Te proponemos que vayas analizando el nivel de exigencia de los cursos en las primeras semanas y tu desempeño. En caso de que veas que no podés con todo es una decisión razonable a tomar es desistir de algunas unidades curriculares (dejándolas para el siguiente semestre) y optar por Matemática Inicial en vez de CDIV (no se pueden cursar a la vez). | No es respuesta final
+
+Nueva hipótesis:
+b. Te proponemos que vayas analizando el nivel de exigencia de los cursos en las primeras semanas y tu desempeño. En caso de que veas que no podés con todo es una decisión razonable a tomar es desistir de algunas unidades curriculares (dejándolas para el siguiente semestre) y optar por Matemática Inicial en vez de CDIV (no se pueden cursar a la vez).
+
+Concat | a,b | La Facultad te sugiere que en caso de no acreditar en el resultado de tu prueba diagnóstica de matemática, elijas cursar Matemática Inicial en vez de CDIV.
+Te proponemos que vayas analizando el nivel de exigencia de los cursos en las primeras semanas y tu desempeño. En caso de que veas que no podés con todo es una decisión razonable a tomar optar por Matemática Inicial en vez de CDIV (no se pueden cursar a la vez). | No es respuesta final
+
+Nueva hipótesis:
+6. La Facultad te sugiere que en caso de no acreditar en el resultado de tu prueba diagnóstica de matemática, elijas cursar Matemática Inicial en vez de CDIV.
+Te proponemos que vayas analizando el nivel de exigencia de los cursos en las primeras semanas y tu desempeño. En caso de que veas que no podés con todo es una decisión razonable optar por Matemática Inicial en vez de CDIV (no se pueden cursar a la vez).
+
+Refine | 6 | Primero deberías tener en cuenta que la Facultad sugiere que en caso de no acreditar en el resultado de tu prueba diagnóstica de matemática, elijas cursar Matemática Inicial en vez de CDIV.
+Si aún así no estás seguro, te proponemos que vayas analizando el nivel de exigencia de los cursos en las primeras semanas y tu desempeño. En caso de que veas que no podés con todo, una decisión razonable a tomar es optar por Matemática Inicial en vez de CDIV (no se pueden cursar a la vez). | Es respuesta final","Primero deberías tener en cuenta que la Facultad sugiere que en caso de no acreditar en el resultado de tu prueba diagnóstica de matemática, elijas cursar Matemática Inicial en vez de CDIV.
+Si aún así no estás seguro, te proponemos que vayas analizando el nivel de exigencia de los cursos en las primeras semanas y tu desempeño. En caso de que veas que no podés con todo, una decisión razonable a tomar es optar por Matemática Inicial en vez de CDIV (no se pueden cursar a la vez)."
+5,46 15  6,¿Cómo me inscribo a la carrera de Ingeniería en Computación?,"El proceso para inscribirse a una carrera en la Facultad de Ingeniería de la Universidad de la República implica obtener una identidad digital, inscribirse a la Universidad a través del portal bedelias.udelar.edu.uy, agendarse para entregar la documentación original, completar el formulario estadístico y realizar el pago.","La respuesta se basa en el primer extracto, que describe los pasos para inscribirse a una carrera en la Facultad de Ingeniería. Los extractos 2 y 3 no proporcionan información relevante para responder a esta pregunta.","Instantiate | 1 | Para inscribirte a la carrera de Inegniería en Computación, tenés que seguir estos pasos:
+
+**PASO 1.** Obtener una identidad digital por una de las siguientes vías: usuario TuID que lo otorga ANTEL (tutorial para gestionarlo: https://www.youtube.com/watch?v=MwgwTxr_y04) o usuario GUB.UY que lo proporciona el Estado uruguayo (tutorial para obtenerlo: https://www.youtube.com/watch?v=G-qpHeBLtig). Los estudiantes que ya han ingresado a la UDELAR podrán inscribirse a la facultad con la clave UDELAR.
+
+**PASO 2.** Inscripción a la Universidad por portal bedelias.udelar.edu.uy y adjuntar TODA la documentación requerida.
+
+**PASO 3.** Agendarse para entregar la documentación original (Consultar en: https://agendaweb.udelar.edu.uy/sae/agendarReserva/Paso1/FING/Tramites+Generales+Bedelia+2022)
+
+**PASO 4.** Una vez presentada presencialmente la documentación original se enviará automáticamente un correo con el código de activación del usuario Udelar (antes de las 72 h de recibido el código de activación proceder a crear la contraseña).
+
+**PASO 5.** Completar el formulario estadístico (https://formularios.udelar.edu.uy/forma/). El formulario es de carácter obligatorio, se completa todos los años y para cada carrera en la que estás inscipto. El estudiante que no lo realice se verá sancionado hasta tanto lo haga y no podrá realizar ninguna actividad en la carrera.
+
+**Por consultas** bedelia@fing.edu.uy | Es respuesta final","Para inscribirte a la carrera de Inegniería en Computación, tenés que seguir estos pasos:
+
+**PASO 1.** Obtener una identidad digital por una de las siguientes vías: usuario TuID que lo otorga ANTEL (tutorial para gestionarlo: https://www.youtube.com/watch?v=MwgwTxr_y04) o usuario GUB.UY que lo proporciona el Estado uruguayo (tutorial para obtenerlo: https://www.youtube.com/watch?v=G-qpHeBLtig). Los estudiantes que ya han ingresado a la UDELAR podrán inscribirse a la facultad con la clave UDELAR.
+
+**PASO 2.** Inscripción a la Universidad por portal bedelias.udelar.edu.uy y adjuntar TODA la documentación requerida.
+
+**PASO 3.** Agendarse para entregar la documentación original (Consultar en: https://agendaweb.udelar.edu.uy/sae/agendarReserva/Paso1/FING/Tramites+Generales+Bedelia+2022)
+
+**PASO 4.** Una vez presentada presencialmente la documentación original se enviará automáticamente un correo con el código de activación del usuario Udelar (antes de las 72 h de recibido el código de activación proceder a crear la contraseña).
+
+**PASO 5.** Completar el formulario estadístico (https://formularios.udelar.edu.uy/forma/). El formulario es de carácter obligatorio, se completa todos los años y para cada carrera en la que estás inscipto. El estudiante que no lo realice se verá sancionado hasta tanto lo haga y no podrá realizar ninguna actividad en la carrera.
+
+**Por consultas** bedelia@fing.edu.uy"
+6,64 91 65,Estoy teniendo problemas con la clave de mi usuario.,-,-,"Extract | 1 | Estas dudas deben consultarse en el Departamento de Bedelía: https://www.fing.edu.uy/bedelia | No es respuesta final
+
+Nueva hipótesis:
+a. Estas dudas deben consultarse en el Departamento de Bedelía: https://www.fing.edu.uy/bedelia
+
+Extract | 3 | Los horarios de Bedelía se encuentran en https://www.fing.edu.uy/bedelia. | No es respuesta final
+
+Nueva hipótesis:
+b. Los horarios de Bedelía se encuentran en https://www.fing.edu.uy/bedelia.
+
+Compose | a,b | Estas dudas deben consultarse en el Departamento de Bedelía: https://www.fing.edu.uy/bedelia, en donde encontrarás también los horarios de atención. | No es respuesta final
+
+Nueva hipótesis:
+c.  Estas dudas deben consultarse en el Departamento de Bedelía: https://www.fing.edu.uy/bedelia. En esa página encontrarás también los horarios de atención.
+
+Refine | c | Por dudas relacionadas con la clave de tu usuario, deberías consultar en el Departamento de Bedelía: https://www.fing.edu.uy/bedelia. En esa página encontrarás también los horarios de atención. | Es respuesta final",
