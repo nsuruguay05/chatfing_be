@@ -25,12 +25,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-^(my%x-+acz)c8ca@_e_v5x@u1ldx*6fx#@%l^@so#e2^6va%e'
+SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-^(my%x-+acz)c8ca@_e_v5x@u1ldx*6fx#@%l^@so#e2^6va%e')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG') == 'True'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'https://fingchat.onrender.com/',
+    'localhost',
+]
 
 
 # Application definition
@@ -132,10 +135,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# Tell Django to copy static assets into a path called `staticfiles` (this is specific to Render)
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # This production code might break development mode, so we check whether we're in DEBUG mode
 if not DEBUG:
+    # Tell Django to copy static assets into a path called `staticfiles` (this is specific to Render)
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     # Enable the WhiteNoise storage backend, which compresses static files to reduce disk use
     # and renames the files with unique names for each version to support long-term caching
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
