@@ -32,6 +32,7 @@ DEBUG = os.getenv('DEBUG') == 'True'
 
 ALLOWED_HOSTS = [
     'fingchat.onrender.com',
+    'chatfing-eoc.onrender.com'
     'localhost',
 ]
 
@@ -153,4 +154,6 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "https://fingchat.vercel.app",
     "https://fingchat.onrender.com",
+    "https://fingchat-eoc.vercel.app",
+    "https://chatfing-eoc.onrender.com",
 ]
