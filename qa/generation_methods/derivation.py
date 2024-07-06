@@ -39,7 +39,7 @@ def create_answer(message, model, temperature=0):
             steps.append({"rule": None, "hipotesis": None, "conclusion": "|".join(parts).strip()})
 
     if len(steps) == 0:
-        return res, [{"rule": "NoInfo", "hipotesis": "-1", "conclusion": res}]
+        return res, references, get_tree([{"rule": "NoInfo", "hipotesis": "-1", "conclusion": res}], references)
     return steps[-1]["conclusion"], references, get_tree(steps, references)
 
 def derivation_prompt(message):
