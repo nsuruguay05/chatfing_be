@@ -32,7 +32,7 @@ DEBUG = os.getenv('DEBUG') == 'True'
 
 ALLOWED_HOSTS = [
     'fingchat.onrender.com',
-    'chatfing-eoc.onrender.com'
+    'chatfing-eoc.onrender.com',
     'localhost',
 ]
 
