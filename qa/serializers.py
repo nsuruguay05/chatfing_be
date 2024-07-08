@@ -17,13 +17,16 @@ class AnswerSerializer(serializers.ModelSerializer):
             for child in derivation['children']:
                 leafs += self._get_leafs_derivation(child)
             return list(set(leafs))
-        return [derivation['text']]
+        elif derivation['rule'] != '[NoInfo]':
+            return [derivation['text']]
+        return []
 
     def get_answer(self, answer):
         answer_msg = answer.answer
         if answer.method == AnswerMethod.DERIVATION.value and isinstance(answer.derivation, dict):
             used_refs = ['\n- ' + ref for ref in self._get_leafs_derivation(answer.derivation)]
-            answer_msg += f"\n\n**Referencias:**{''.join(used_refs)}"
+            if len(used_refs) > 0:
+                answer_msg += f"\n\n**Referencias:**{''.join(used_refs)}"
         return answer_msg
 
 class QuestionSerializer(serializers.ModelSerializer):
